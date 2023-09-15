@@ -2,17 +2,21 @@ function init() {
     // create a wrapper around native canvas element (with id="c")
     var canvas = new fabric.Canvas('c');
 
-    // create a rectangle object
-    var rect = new fabric.Rect({
-    left: 100,
-    top: 100,
-    fill: 'red',
-    width: 20,
-    height: 20
-    });
+    
 
-    // "add" rectangle onto canvas
-    canvas.add(rect);
+    fabric.Image.fromURL('images/ветка 2.png', function(oImg) {
+        // scale image down, and flip it, before adding it onto canvas
+        oImg.scale(0.15).set('flipX', true);
+        canvas.add(oImg);
+      });
+
+    fabric.Image.fromURL('images/бутон 2.png', function(oImg) {
+        // scale image down, and flip it, before adding it onto canvas
+        oImg.scale(0.15).set('flipX', true);
+        canvas.add(oImg);
+      });  
+ 
+      
 }
 
 init();
