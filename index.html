@@ -12,262 +12,122 @@
     </head>
     <body>
 
-        <div class="container">
-        <canvas id="c"></canvas>        
+    <div class="container-fluid">
+        
+        <canvas id="c"></canvas>
 
 
-        <div class="accordion" id="menu">
-            <div class="accordion-item">
-              <h2 class="accordion-header col" id="headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                    <img src="images/geo.png" width="100px"/>
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse col" aria-labelledby="headingOne" data-bs-parent="#menu">
-                <div class="accordion-body">
-                    <button class="btn" onclick="addItem('images/geo 1.png')">
-                        <img src="images/geo 1.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/geo 2.png')">
-                        <img src="images/geo 2.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/geo 3.png')">
-                        <img src="images/geo 3.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/geo 4.png')">
-                        <img src="images/geo 4.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/geo 5.png')">
-                        <img src="images/geo 5.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/geo 6.png')">
-                        <img src="images/geo 6.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/geo 7.png')">
-                        <img src="images/geo 7.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/geo 8.png')">
-                        <img src="images/geo 8.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/geo 9.png')">
-                        <img src="images/geo 9.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/geo 10.png')">
-                        <img src="images/geo 10.png" width="50px"/>
-                    </button>
-
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="heading2">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                    <img src="images/plus.png" width="100px"/>
-                </button>
-              </h2>
-              <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#menu">
-                <div class="accordion-body">
-                    <button class="btn" onclick="addItem('images/plus 1.png')">
-                        <img src="images/plus 1.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/plus 2.png')">
-                        <img src="images/plus 2.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/plus 3.png')">
-                        <img src="images/plus 3.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/plus 4.png')">
-                        <img src="images/plus 4.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/plus 5.png')">
-                        <img src="images/plus 5.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/plus 6.png')">
-                        <img src="images/plus 6.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/plus 7.png')">
-                        <img src="images/plus 7.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/plus 8.png')">
-                        <img src="images/plus 8.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/plus 9.png')">
-                        <img src="images/plus 9.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/plus 10.png')">
-                        <img src="images/plus 10.png" width="50px"/>
-                    </button>
-                </div>
-              </div>
-            </div>
+        <ul class="nav nav-justified" id="menu">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                  <img src="images/geo.png" width="100px"/>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/geo 1.png')"><img src="images/geo 1.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/geo 2.png')"><img src="images/geo 2.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/geo 3.png')"><img src="images/geo 3.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/geo 4.png')"><img src="images/geo 4.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/geo 5.png')"><img src="images/geo 5.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/geo 6.png')"><img src="images/geo 6.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/geo 7.png')"><img src="images/geo 7.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/geo 8.png')"><img src="images/geo 8.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/geo 9.png')"><img src="images/geo 9.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/geo 10.png')"><img src="images/geo 10.png" width="50px"/></a></li>
+                </ul>
+            </li>
+        
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                  <img src="images/plus.png" width="100px"/>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/plus 1.png')"><img src="images/plus 1.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/plus 2.png')"><img src="images/plus 2.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/plus 3.png')"><img src="images/plus 3.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/plus 4.png')"><img src="images/plus 4.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/plus 5.png')"><img src="images/plus 5.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/plus 6.png')"><img src="images/plus 6.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/plus 7.png')"><img src="images/plus 7.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/plus 8.png')"><img src="images/plus 8.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/plus 9.png')"><img src="images/plus 9.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/plus 10.png')"><img src="images/plus 10.png" width="50px"/></a></li>
+                </ul>
+            </li>
             
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="heading5">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                      <img src="images/spot 30.png" width="100px"/>
-                  </button>
-                </h2>
-                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#menu">
-                  <div class="accordion-body">
-                    <button class="btn" onclick="addItem('images/spot 30 1.png')">
-                        <img src="images/spot 30 1.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/spot 30 2.png')">
-                        <img src="images/spot 30 2.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/spot 30 3.png')">
-                        <img src="images/spot 30 3.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/spot 30 4.png')">
-                        <img src="images/spot 30 4.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/spot 30 5.png')">
-                        <img src="images/spot 30 5.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/spot 30 6.png')">
-                        <img src="images/spot 30 6.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/spot 30 7.png')">
-                        <img src="images/spot 30 7.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/spot 30 8.png')">
-                        <img src="images/spot 30 8.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/spot 30 9.png')">
-                        <img src="images/spot 30 9.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/spot 30 10.png')">
-                        <img src="images/spot 30 10.png" width="50px"/>
-                    </button>
-                  </div>
-                </div>
-            </div>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                  <img src="images/spot 30.png" width="100px"/>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/spot 30 1.png')"><img src="images/spot 30 1.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/spot 30 2.png')"><img src="images/spot 30 2.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/spot 30 3.png')"><img src="images/spot 30 3.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/spot 30 4.png')"><img src="images/spot 30 4.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/spot 30 5.png')"><img src="images/spot 30 5.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/spot 30 6.png')"><img src="images/spot 30 6.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/spot 30 7.png')"><img src="images/spot 30 7.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/spot 30 8.png')"><img src="images/spot 30 8.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/spot 30 9.png')"><img src="images/spot 30 9.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/spot 30 10.png')"><img src="images/spot 30 10.png" width="50px"/></a></li>
+                </ul>
+            </li>
 
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="heading4">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                      <img src="images/spot 22.png" width="100px"/>
-                  </button>
-                </h2>
-                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#menu">
-                  <div class="accordion-body">
-                    <button class="btn" onclick="addItem('images/spot 22 1.png')">
-                        <img src="images/spot 22 1.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/spot 22 2.png')">
-                        <img src="images/spot 22 2.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/spot 22 3.png')">
-                        <img src="images/spot 22 3.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/spot 22 4.png')">
-                        <img src="images/spot 22 4.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/spot 22 5.png')">
-                        <img src="images/spot 22 5.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/spot 22 6.png')">
-                        <img src="images/spot 22 6.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/spot 22 7.png')">
-                        <img src="images/spot 22 7.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/spot 22 8.png')">
-                        <img src="images/spot 22 8.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/spot 22 9.png')">
-                        <img src="images/spot 22 9.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/spot 22 10.png')">
-                        <img src="images/spot 22 10.png" width="50px"/>
-                    </button>
-                  </div>
-                </div>
-            </div>
-              
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="heading3">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                      <img src="images/spot 12.png" width="100px"/>
-                  </button>
-                </h2>
-                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#menu">
-                  <div class="accordion-body">
-                    <button class="btn" onclick="addItem('images/spot 12 1.png')">
-                        <img src="images/spot 12 1.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/spot 12 2.png')">
-                        <img src="images/spot 12 2.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/spot 12 3.png')">
-                        <img src="images/spot 12 3.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/spot 12 4.png')">
-                        <img src="images/spot 12 4.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/spot 12 5.png')">
-                        <img src="images/spot 12 5.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/spot 12 6.png')">
-                        <img src="images/spot 12 6.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/spot 12 7.png')">
-                        <img src="images/spot 12 7.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/spot 12 8.png')">
-                        <img src="images/spot 12 8.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/spot 12 9.png')">
-                        <img src="images/spot 12 9.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/spot 12 10.png')">
-                        <img src="images/spot 12 10.png" width="50px"/>
-                    </button>
-                  </div>
-                </div>
-            </div>  
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="heading6">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
-                      <img src="images/wave.png" width="100px"/>
-                  </button>
-                </h2>
-                <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#menu">
-                  <div class="accordion-body">
-                    <button class="btn" onclick="addItem('images/wave 1.png')">
-                        <img src="images/wave 1.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/wave 2.png')">
-                        <img src="images/wave 2.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/wave 3.png')">
-                        <img src="images/wave 3.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/wave 4.png')">
-                        <img src="images/wave 4.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/wave 5.png')">
-                        <img src="images/wave 5.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/wave 6.png')">
-                        <img src="images/wave 6.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/wave 7.png')">
-                        <img src="images/wave 7.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/wave 8.png')">
-                        <img src="images/wave 8.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/wave 9.png')">
-                        <img src="images/wave 9.png" width="50px"/>
-                    </button>
-                    <button class="btn" onclick="addItem('images/wave 10.png')">
-                        <img src="images/wave 10.png" width="50px"/>
-                    </button>
-                  </div>
-                </div>
-              </div>           
-        </div>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                  <img src="images/spot 22.png" width="100px"/>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/spot 22 1.png')"><img src="images/spot 22 1.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/spot 22 2.png')"><img src="images/spot 22 2.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/spot 22 3.png')"><img src="images/spot 22 3.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/spot 22 4.png')"><img src="images/spot 22 4.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/spot 22 5.png')"><img src="images/spot 22 5.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/spot 22 6.png')"><img src="images/spot 22 6.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/spot 22 7.png')"><img src="images/spot 22 7.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/spot 22 8.png')"><img src="images/spot 22 8.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/spot 22 9.png')"><img src="images/spot 22 9.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/spot 22 10.png')"><img src="images/spot 22 10.png" width="50px"/></a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                  <img src="images/spot 12.png" width="100px"/>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/spot 12 1.png')"><img src="images/spot 12 1.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/spot 12 2.png')"><img src="images/spot 12 2.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/spot 12 3.png')"><img src="images/spot 12 3.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/spot 12 4.png')"><img src="images/spot 12 4.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/spot 12 5.png')"><img src="images/spot 12 5.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/spot 12 6.png')"><img src="images/spot 12 6.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/spot 12 7.png')"><img src="images/spot 12 7.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/spot 12 8.png')"><img src="images/spot 12 8.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/spot 12 9.png')"><img src="images/spot 12 9.png" width="50px"/></a></li>
+                    <li><a class="dropdown-item" href="#" onclick="addItem('images/spot 12 10.png')"><img src="images/spot 12 10.png" width="50px"/></a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                  <img src="images/wave.png" width="100px"/>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#" onclick="addItem('images/wave 1.png')"><img src="images/wave 1.png" width="50px"/></a></li>
+                  <li><a class="dropdown-item" href="#" onclick="addItem('images/wave 2.png')"><img src="images/wave 2.png" width="50px"/></a></li>
+                  <li><a class="dropdown-item" href="#" onclick="addItem('images/wave 3.png')"><img src="images/wave 3.png" width="50px"/></a></li>
+                  <li><a class="dropdown-item" href="#" onclick="addItem('images/wave 4.png')"><img src="images/wave 4.png" width="50px"/></a></li>
+                  <li><a class="dropdown-item" href="#" onclick="addItem('images/wave 5.png')"><img src="images/wave 5.png" width="50px"/></a></li>
+                  <li><a class="dropdown-item" href="#" onclick="addItem('images/wave 6.png')"><img src="images/wave 6.png" width="50px"/></a></li>
+                  <li><a class="dropdown-item" href="#" onclick="addItem('images/wave 7.png')"><img src="images/wave 7.png" width="50px"/></a></li>
+                  <li><a class="dropdown-item" href="#" onclick="addItem('images/wave 8.png')"><img src="images/wave 8.png" width="50px"/></a></li>
+                  <li><a class="dropdown-item" href="#" onclick="addItem('images/wave 9.png')"><img src="images/wave 9.png" width="50px"/></a></li>
+                  <li><a class="dropdown-item" href="#" onclick="addItem('images/wave 10.png')"><img src="images/wave 10.png" width="50px"/></a></li>
+                </ul>
+            </li>            
+        </ul>
+   
+    </div>
 
 
         <script src="fabric.min.js"></script>

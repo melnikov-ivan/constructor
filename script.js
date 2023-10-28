@@ -12,7 +12,10 @@ function addItem(image) {
     // scale image down, and flip it, before adding it onto canvas
     oImg.scale(0.5).set('flipX', true);
     canvas.add(oImg);
-  }); 
+  }, {
+    top: 200,
+    left: 200,
+ }); 
 }
 
 function resizeCanvas() {
